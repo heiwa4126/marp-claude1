@@ -1,4 +1,4 @@
-# claude-marp1
+# marp-claude1
 
 - [「スライド作って」で本当にスライドができる — Marp × Claude Code 実践ガイド #ClaudeCode - Qiita](https://qiita.com/toku345/items/11158328ca098957ff27)
 - [toku345/marp-slides: Marp を使用したスライド作成・管理プロジェクト](https://github.com/toku345/marp-slides)
@@ -14,8 +14,8 @@ ClaudeもSKILLもよくわかってないので、動かしてみるところか
 ## 準備
 
 ```sh
-mkdir claude-marp1
-cd claude-marp1
+mkdir marp-claude1
+cd marp-claude1
 bun init # blank プロジェクトを選択する
 bun add -D markdownlint-cli @marp-team/marp-cli
 ```

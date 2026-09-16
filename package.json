@@ -1,5 +1,5 @@
 {
-	"name": "claude-marp1",
+	"name": "marp-claude1",
 	"private": true,
 	"type": "module",
 	"module": "index.ts",
