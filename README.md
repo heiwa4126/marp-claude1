@@ -5,7 +5,7 @@
 
 を Claude Code on VSCode で試してみるテスト。
 
-ClaudeもSKILLもよくわかってないので、動かしてみるところから始める。
+Claude も SKILL もよくわかってないので、動かしてみるところから始める。
 
 ## 完成品
 
