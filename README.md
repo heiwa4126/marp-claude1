@@ -57,13 +57,32 @@ Claude Code に
 で出来たのが
 [slides/claude-code-vscode.md](slides/claude-code-vscode.md)
 
+WSLで動かすと
+
 > ブラウザが利用できないため PNG 出力は失敗しました。
 
 > 視覚的確認: 未実施（WSL 環境でブラウザが起動できず PNG 出力不可）
 
-などと言われる。たしかにプレビューすると
-若干ハミ出してる。
+などと言われる。あきらめて Windows で動かす。
 
-修正箇所を教えてもらって手で調整した。
-あとタイトルページのページ番号を取り除いてもらって、
+プレビューすると若干ハミ出してる。修正箇所を教えてもらって手で調整した。あとタイトルページのページ番号を取り除いてもらって、
 SKILL などに反映してもらった。
+
+さらに
+
+```sh
+bun run build
+```
+
+で `dist/` の下に HTML と PDF ができる。
+
+```sh
+bun run build:pptx
+```
+
+で `dist/` の下に画像はりつけタイプの PowerPoint もできる(編集不可)。
+
+## つづき
+
+[heiwa4126/marp-copilot2: toku345/marp-slides を GitHub Copilot で動かしてみるテスト](https://github.com/heiwa4126/marp-copilot2)
+に続く。
