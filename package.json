@@ -1,0 +1,31 @@
+{
+	"name": "claude-marp1",
+	"private": true,
+	"type": "module",
+	"module": "index.ts",
+	"scripts": {
+		"build": "bun run build:html && bun run build:pdf",
+		"build:deploy": "bun run build:html && bun run build:pdf && bun run build:pptx && bun run generate:index",
+		"preview": "marp -s . --allow-local-files",
+		"copy:images": "mkdir -p dist/images && cp -r slides/images/* dist/images/",
+		"build:html": "bun run copy:images && marp -I slides/ -o dist/ --html --allow-local-files",
+		"build:pdf": "marp -I slides/ -o dist/ --pdf --allow-local-files",
+		"build:pptx": "marp -I slides/ -o dist/ --pptx --allow-local-files",
+		"generate:index": "bun scripts/generate-index.js",
+		"lint": "markdownlint slides/**/*.md && biome check scripts/",
+		"lint:fix": "markdownlint --fix slides/**/*.md && oxlint --fix scripts/",
+		"lint:js": "oxlint scripts/",
+		"lint:js:fix": "oxlint --fix scripts/",
+		"format1": "oxfmt",
+		"lint1": "oxlint .",
+		"check": "oxlint . && oxfmt"
+	},
+	"devDependencies": {
+		"@marp-team/marp-cli": "^4.5.1",
+		"@types/bun": "latest",
+		"markdownlint-cli": "^0.49.1"
+	},
+	"peerDependencies": {
+		"typescript": "^7"
+	}
+}
