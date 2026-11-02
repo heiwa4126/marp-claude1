@@ -23,7 +23,7 @@
 	"devDependencies": {
 		"@marp-team/marp-cli": "^4.5.1",
 		"@types/bun": "latest",
-		"markdownlint-cli": "^0.49.1"
+		"markdownlint-cli": "^0.50.0"
 	},
 	"peerDependencies": {
 		"typescript": "^7"
